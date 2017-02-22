@@ -1,5 +1,6 @@
 Flask
 flask-socketio
 SQLAlchemy
+flask_sqlalchemy
 requests
 psycopg2
