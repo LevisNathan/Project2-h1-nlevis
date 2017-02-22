@@ -1,16 +1,36 @@
 html {
     font-family: Helvetica, sans-serif;
-    background-color: black;
     color: white;
+    text-align: center;
 }
-
+body{
+    height: 100%;
+    background-image: url("http://nerdist.com/wp-content/uploads/2015/10/vinyl-record.jpg"); background-size: cover; background-repeat: no-repeat;
+    
+}
 .heading {
+    
     font-size: 3em;
     text-shadow: 0 0 2em red;
     margin-top: 1em;
     margin-bottom: 0.125em;
 }
-
+ul{
+    list-style: none;
+}
+.fb-login-button{
+    margin-left: 0px;
+}
 .number-item {
-    background-color: green;
+    
+    background:rgba(0,0,0,0.5);
+    width:500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: -1px;
+}
+.brick{
+    margin: auto;
+    height: 250px;
+    overflow: auto;
 }

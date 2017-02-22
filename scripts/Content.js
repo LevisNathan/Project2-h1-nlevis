@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Button } from './Button';
 import { Socket } from './Socket';
 
+
 export class Content extends React.Component {
     constructor(props) {
         super(props);
@@ -14,20 +15,36 @@ export class Content extends React.Component {
     componentDidMount() {
         Socket.on('all numbers', (data) => {
             this.setState({
-                'numbers': data['numbers']
+                'numbers' : data['numbers'] ,
+                // 'picture' : data['picture'] , 
+                // 'name'    : data['name']
             });
         })
     }
 
     render() {
+       
         let numbers = this.state.numbers.map(
             (n, index) => <li className="number-item" key={index}>{n}</li>
         );
         return (
             <div>
-                <h1 className="heading">Random numbers so far!</h1>
+                <div
+                    className="fb-login-button"
+                    data-max-rows="1"
+                    data-size="medium"
+                    data-show-faces="false"
+                    data-auto-logout-link="true">
+                </div>
+                <div
+                    // className="g-signin2"
+                    // data-theme="dark"
+                    >
+                </div>
+                <h1>Project 2 Chat Box</h1>
+                
                 <Button />
-                <ul>{numbers}</ul>
+                <ul className="brick">{numbers}</ul>
             </div>
         );
     }
