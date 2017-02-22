@@ -12809,7 +12809,10 @@ var Content = exports.Content = function (_React$Component) {
                     'data-size': 'medium',
                     'data-show-faces': 'false',
                     'data-auto-logout-link': 'true' }),
-                React.createElement('div', null),
+                React.createElement('div', {
+                    className: 'g-signin2',
+                    'data-theme': 'dark'
+                }),
                 React.createElement(
                     'h1',
                     null,
@@ -12908,17 +12911,6 @@ var Button = exports.Button = function (_React$Component) {
                         'facebook_user_token': response.authResponse.accessToken,
                         'number': _this2.state.value
                     });
-                    // }else{
-                    //     let auth = gapi.auth2.getAuthInstance();
-                    //      let user = auth.currentUser.get();
-                    //      if (user.isSignedIn()) {
-                    //          Socket.emit('new number', {
-                    //             'google_user_token':
-                    //                 user.getAuthResponse().id_token,
-                    //             'facebook_user_token': '',
-                    //             'number': random,
-                    //      });
-                    //      }
                 } else {
                     alert("You need to be logged in to chat.");
                 }

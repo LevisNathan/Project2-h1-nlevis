@@ -37,8 +37,8 @@ export class Content extends React.Component {
                     data-auto-logout-link="true">
                 </div>
                 <div
-                    // className="g-signin2"
-                    // data-theme="dark"
+                    className="g-signin2"
+                    data-theme="dark"
                     >
                 </div>
                 <h1>Project 2 Chat Box</h1>
